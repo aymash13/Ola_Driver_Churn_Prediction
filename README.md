@@ -1,70 +1,84 @@
-Ola Driver Churn Prediction 🚖
+# 🚖 Ola Driver Churn Prediction  
 
+## 📝 Problem Statement  
+Ola has been experiencing a **sudden rise in driver attrition (churn) between 2019–2021**, significantly impacting operational efficiency, service quality, and recruitment costs.  
 
-`Problem Statement:` Ola was facing sudden rise in driver atrition rate which was significantally effecting their operational efficiency and recruitment cost.
+## 🎯 Objective  
+The goal of this project is to:  
+- Analyze **patterns** behind driver churn.  
+- Build and evaluate **Machine Learning models** to predict churn.  
+- Provide **data-driven insights** for improving driver retention strategies.  
 
-`Objective:`My objective is to find the pattern between the drivers who had left their job betweeen 2019 to 2021 and  Build and evaluate Machine learning models to predict driver attrition and provide insights for improving retention.
+---
 
-📊 Dataset
+## 📊 Dataset  
+The dataset contains detailed driver-related information across different aspects:  
 
-The dataset contains driver-related information such as:
+- 👤 **Demographics** – Age, Gender, City, etc.  
+- ⭐ **Behavioral Data** – Grade, Ratings, etc.  
+- 💰 **Financial Metrics** – Income, Total Business Value.  
+- 🎯 **Target Variable** – `Churn` (0 = Active, 1 = Churned).  
 
-Demographics – Age, Gender, City, etc.
+---
 
-Behavioral data – Grade, ratings, etc.
+## ⚙️ Workflow  
 
-Financial metrics – Income, Total Business Value.
+### 🔧 Data Preprocessing  
+- Handling missing values  
+- Encoding categorical variables  
+- Feature scaling  
 
-Target variable – Churn (0 = Active, 1 = Churned).
+### 📊 Exploratory Data Analysis (EDA)  
+- Distribution of churned vs. non-churned drivers  
+- Correlation heatmaps  
+- Feature importance analysis  
 
+### 🤖 Model Building  
+- Logistic Regression  
+- Decision Tree & Random Forest  
+- XGBoost / Gradient Boosting  
 
-⚙️ Workflow
+### 📈 Model Evaluation  
+- Accuracy, Precision, Recall, F1-score  
+- ROC-AUC curve  
+- Confusion matrix  
 
-Data Preprocessing
+---
 
-Handling missing values
+## 🚀 Results  
 
-Encoding categorical variables
+- **Best Model:** Random Forest – *87% Accuracy, AUC = 0.91*  
+- **Top Churn Predictors:**  
+  - 📅 Tenure Days  
+  - ⭐ Quarterly Rating  
+  - 💰 Total Business Value  
+  - 🎓 Grade  
+  - 👤 Age  
 
-Feature scaling
+### ✅ Recommendations  
+- **Retain early-career, low-grade, low-earning, and loan-burdened drivers** through:  
+  - Targeted incentives  
+  - Faster career progression  
+  - Stronger onboarding engagement  
+- **Reward high-performing, long-tenured drivers** to:  
+  - Maximize business value  
+  - Build long-term workforce stability  
 
-Exploratory Data Analysis (EDA)
+---
 
-Distribution of churned vs non-churned drivers
+## 🛠️ Tech Stack  
+- **Language:** Python 🐍  
+- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, XGBoost  
+- **Environment:** Google Colab ☁️  
 
-Correlation heatmaps
+---
 
-Feature importance analysis
+## 📌 Future Scope  
+- Deploy the model as a **Flask/Django web app** for real-time predictions.  
+- Integrate **live driver data streams** for proactive churn detection.  
+- Experiment with **Deep Learning models** for advanced prediction.  
 
-Model Building
+---
 
-Logistic Regression
-
-Decision Tree / Random Forest
-
-XGBoost / Gradient Boosting
-
-
-Model Evaluation
-
-Accuracy, Precision, Recall, F1-score
-
-ROC-AUC curve
-
-Confusion matrix
-
-📈 Results
-
-Best-performing model: (e.g., Random Forest with 87% accuracy, AUC = 0.91)
-
-Top churn predictors: (e.g.Tenure_Days, Quarterly Rating, and Total Business Value, Age, Grade)
-
-Recommendations: Ola should focus retention strategies on **early-career, lower-grade, loan-burdened, and low-earning drivers** through targeted incentives, faster career progression, and stronger onboarding engagement. At the same time, rewarding **high-performing, long-tenured drivers** will maximize business value and build long-term workforce stability.
-
-🛠️ Tech Stack
-
-Programming Language: Python
-
-Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, XGBoost
-
-Environment: Google Colab
+## 👨‍💻 Author  
+**Aymash Ansari** 
